@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/tv_task_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:background="@null"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:hint="@string/new_task" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_save_task"
+        android:layout_width="wrap_content"
+        app:cornerRadius="10dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_task_content"
+        android:textSize="16sp"
+        android:layout_alignParentEnd="true"
+        android:text="@string/save"
+        android:textAllCaps="false" />
+
+</RelativeLayout>
